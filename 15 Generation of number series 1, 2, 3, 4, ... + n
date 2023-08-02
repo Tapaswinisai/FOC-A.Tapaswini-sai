@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int n, sum = 0;
+
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    printf("Number series: ");
+    for (int i = 1; i <= n; i++) {
+        printf("%d", i);
+        sum += i;
+
+        // Print comma and space except for the last number
+        if (i != n) {
+            printf(", ");
+        }
+    }
+
+    printf("\nSum of the series: %d\n", sum);
+
+    return 0;
+}
